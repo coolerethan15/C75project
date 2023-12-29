@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>School Website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<nav class="navbar-inverse" style="position:sticky;top:0;z-index:99999">
+
+<div class="navbar-header">
+  <button type="button" class="navbar-toggle" data-toggle="collpse" data-target="#myNavbar">
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+  </button>
+  <a class="navbar-brand" href="#">St Xavier's School</a>
+</div>
+
+<div class="collapse navbar-collapse" id="myNavbar">
+  <ul class="nav navbar-nav">
+    <li><a href="#campus_life">Campus life</a></li>
+    <li><a href="#achievements">Achievements</a></li>
+    <li><a href="#new">What's new</li></a>
+    <li><a href="#contactUs">Contact us</a></li>
+  </ul>
+</div></nav>
+<iframe id="image" src="data:image/png;base64,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"></iframe>
+
+<div class="container">
+  <h2 class="page-header" id="campus_life">Campus Life</h2>
+
+  <center>
+    <div class="travel_mainDiv">
+      <img src="church.jpg">
+
+      <h4 class="text-capitalize"><kbd>School Church</kbd></h4>
+
+      <hr >
+      <h5 class="text_success text_capitalize" >Was established in 1978</h5>
+      <p class="text-muted ">It is very old</p>
+    </div>
+  </center>
+
+  <br><br>
+
+  <center>
+    <div class="travel_mainDiv">
+      <img src="st2.jpg">
+
+      <h4 class="text-capitalize"><kbd>School library</kbd></h4>
+      <hr >
+      <h5 class="text_success text-capitalize" >Was built in 1980</h5>
+      <p class="text-muted" >We've made a lot of improvement over the years</p>
+    </div>
+  </center>
+</div>
+
+<br><br>
+<center>
+  <div class="travel_mainDiv">
+    <img src="st3.jpg">
+    <h4 class="text-capitalize"><kbd>School Auditorium</kbd></h4>
+    <hr>
+    <h5 class="text_success text-capitalize" >Was built in 1982</h5>
+    <p class="text-muted" >We had lots of performances here. We still do!</p>
+  </div>
+</center>
+
+<h2 class="page-header" id="achievements">School Achievements</h2>
+
+<div class="bg-primary movie_head" data-toggle="collapse" data-target="#school_achievement1">
+  Inter School Debate on Environment Pollution<i class="fa fa-sort-desc"></i>
+  </div>
+
+  <div id="school_achievement1" class="collapse">
+
+    <div class="achievement_text">
+      <img src="se1.jpg" class="img-responsive img-thumbnail">
+      <h5 class="text-success text-capitalize">Won first prize on the inter school debateon environment pollution
+      <span class="glyphicon glyphicon-star"></span>
+      <span class="glyphicon glyphicon-star"></span>
+      <span class="glyphicon glyphicon-star"></span>
+      <span class="glyphicon glyphicon-star"></span>
+      <span class="glyphicon glyphicon-star"></span>
+      </h5>
+      <p>It was fun</p>
+    </div>
+  </div>
+
+  <div class="bg-primary movie-head" data-toggle="collapse" data-target="#school_achievement2">
+    Inter School Football Competition<i class="fa fa-sort-desc"></i>
+  </div>
+
+  <div id="school_achievement2" class="collapse">
+
+    <div class="achievement-text">
+      <img src="sm2.jpg" class="img-responsive img-thumbnail">
+      <h5 class="text-success text-capitalize">Came second in inter school football competition
+      <span class="glyphicon glyphicon-star"></span>
+      <span class="glyphicon glyphicon-star"></span>
+      <span class="glyphicon glyphicon-star"></span>
+      <span class="glyphicon glyphicon-star"></span>
+      <span class="glyphicon glyphicon-star"></span>
+      </h5>
+      <p>It was a tough competition</p>
+    </div>
+  </div>
+
+  <div class="bg-primary movie-head" data-toggle="collapse" data-target="#school_achievement3">
+    Inter School Scienece project Competition<i class="fa fa-sort-desc"></i>
+  </div>
+
+  <div id="school_achievement3" class="collapse">
+
+    <div class="achievement-text">
+      <img src="sm3.jpg" class="img-responsive img-thumbnail">
+      <h5 class="text-success text-capitalize">Came second in inter school science project competition
+      <span class="glyphicon glyphicon-star"></span>
+      <span class="glyphicon glyphicon-star"></span>
+      <span class="glyphicon glyphicon-star"></span>
+      <span class="glyphicon glyphicon-star"></span>
+      <span class="glyphicon glyphicon-star"></span>
+      </h5>
+      <p>There was a lot of explosions</p>
+    </div>
+  </div>
+
+  <h2 class="page-header" id="new">What's new</h2>
+
+  <ul class="list-group">
+
+    <li class="list-group-item list-group-item-success col-lg-12 col-md-12 col-sm-12 col-xs-12 environment_li">
+      <h4>New School canteen</h4>
+      <img src="canteen.jpg" class="img-responsive col-lg-7 col-md-7 col-sm-7 col-xs-12"> We have a variety of food in our school canteen. 
+      We also provide for vegetarians and vegans.
+    </li>
+  </ul>
+  <li class="list-group-item list-group-item-success col-lg-12 col-md-12 col-sm-12 col-xs-12 environment_li">
+    <h4>New Attendance system</h4>
+    <img src="attendance.jpg" class="img-responsive col-lg-7 col-md-7 col-sm-7 col-xs-12"> We have a state of the art attendance system.
+    We have sensors which when your child crosses, will ping you a notification. 
+    If your child hasn't croosed the sensors by the school bell, we will send a notification about it.
+    If your child is unwell, you must let the school know by 10mins prior the the bell time
+  </li>
+</ul>
+
+<section id="contact">
+  <iframe
+      src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15078.353856082635!2d72.8906491!3d19.1257017!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xacf72f56793d190a!2sWHITEHAT%20EDUCATION%20TECHNOLOGY%20PVT%20LTD!5e0!3m2!1sen!2sin!4v1573468987088!5m2!1sen!2sin"
+      height="450" frameborder="0" allowfullscreen=""></iframe>
+
+      <img src="sp.png"
+  <div class="contact_1">
+      <a href="mailto:my@gmail.com?Subject=Hi">
+          <h5><i class="fa fa-envelope"></i>&nbsp;&nbsp;mygmailid@gmail.com</h5>
+      </a>
+
+      <a href="#">
+          <h5><i class="fa fa-instagram"></i>&nbsp;&nbsp;myinstagramid</h5>
+      </a>
+  </div>
+
+</section>
+
+
+</body>
+
+</html>
